@@ -4,13 +4,6 @@ import { IReduxToggleMessageAction, toggleMessage } from "./actions";
 import { Dispatch, bindActionCreators } from "redux";
 import { AppState } from "./rootReducer";
 
-import { ActionReducerMapBuilder } from "@reduxjs/toolkit";
-
-type TT = ActionReducerMapBuilder<any> & never;
-let t: TT;
-
-console.log(t);
-
 const Toggle: React.FC<ToggleProps> = ({
   messageVisibility,
   toggleMessage
